@@ -1,0 +1,32 @@
+PROCESS:
+    1.load data;
+    2.visulize data;
+    3.generate new data;(X1_2,etc)
+    4.establish model and train it;
+    5.predict;accuracy;
+    6.decision boundary;
+    7.define f(x)
+
+#define f(x)--半补全边界函数±（半补全是因为数据有缺口）
+def f(x):
+    a = theta4
+    b = theta5*x+theta2
+    c = theta0+theta1*x+theta3*x*x
+    x2_new_boundary1 = (-b+np.sqrt(b*b-4*a*c))/(2*a)
+    x2_new_boundary2 = (-b-np.sqrt(b*b-4*a*c))/(2*a)
+    return x2_new_boundary1,x2_new_boundary2
+
+x2_new_boundary1 = []
+x2_new_boundary2 = []
+for x in x1_new:
+    x2_new_boundary1.append(f(x)[0])
+    x2_new_boundary2.append(f(x)[1])
+
+#补全缺口
+x1_range = [-0.9 + x/10000 for x in range(0,19000)]# -0.9起始 ，x/10000间隔 ， （0，19000）设置的范围
+x1_range = np.array(x1_range)
+x2_new_boundary1 = []
+x2_new_boundary2 = []
+for x in x1_new:
+    x2_new_boundary1.append(f(x)[0])
+    x2_new_boundary2.append(f(x)[1])
