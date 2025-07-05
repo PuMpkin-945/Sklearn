@@ -51,8 +51,8 @@ $$
 $$p(x)=\prod_{j=1}^{n}p(x_j;\mu_j;\delta_j^{2})$$
 
 ## 主成分分析(PCA)
-    principal components analysis:数据降维技术中，应用最多的方法。<br>
-    目标是寻找k(k<n)维新数据，使它们反映事物的主要特征。<br>
+    principal components analysis:数据降维技术中，应用最多的方法。
+    目标是寻找k(k<n)维新数据，使它们反映事物的主要特征。
     核心是在信息损失尽可能少的情况下，降低数据维度。
 
 - **数据降维**
