@@ -22,11 +22,11 @@ ID3、C4.5、CART
 - **高斯分布**
 
 概率密度、均值、标准差：
-$$
-p(x)=\frac{1}{\delta \sqrt{2\pai}}e^{-\frac{{x-\mu}^2}{2 \delta^2}}
-$$  
-$\mu=\frac{1}{m} \sum_{i=1}^{m} x_i$,  
-$\delta^2=\frac{1}{m} \sum_{i=1}{m} {x_i - \mu}^2$  
+
+ $$p(x)=\frac{1}{\delta \sqrt{2\pi}}e^{-\frac{{x-\mu}^2}{2 \delta^2}}$$
+
+ $\mu=\frac{1}{m} \sum_{i=1}^{m} x_i$,  
+ $\delta^2=\frac{1}{m} \sum_{i=1}{m} {x_i - \mu}^2$  
 
 - **一维数据**
 1. 计算数据均值和标准差
@@ -35,13 +35,16 @@ $\delta^2=\frac{1}{m} \sum_{i=1}{m} {x_i - \mu}^2$
 
 - **n维数据**
 
-$$
-\left\{ \begin{array}{c}
-x_1^{(1)},x_2^{(2)},\cdots,x_1^{(m)\
-\vdots\
-x_n^{(1)},x_n^{(2)},\cdots,x_n^{(m)\
-\end{array}\right\}
-$$
+
+$$ 
+\left( 
+\begin{aligned}
+x_1^{(1)}, x_2^{(2)}, \cdots, x_1^{(m)} \\
+   \vdots   \\
+x_n^{(1)}, x_n^{(2)}, \cdots, x_n^{(m)} 
+\end{aligned}
+\right)
+$$  
 
 1. 计算每一维数据的均值和标准差
 2. 计算概率密度函数 $p(x)$
