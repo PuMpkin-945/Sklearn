@@ -18,7 +18,7 @@ $$C = \{c_1, c_2, \dots, c_k\}$$
 在随机初始化聚类中心后，K-means++ 计算剩余数据点与最近聚类中心的距离；根据距离的远近，确定该点被选为下一个聚类中心的概率 $\mu_j$：  
 
 $$ 
-\mu_j = \frac{ \arg\min_{j=1,\cdots,i} \| p' - c_j \|^2 }{ \sum_{p \in P} \arg\min_{j=1,\cdots,i} \| p - c_j \|^2 } 
+\mu_j = \frac{ \arg\min_{j=1,\cdots,i} \Vert p' - c_j \Vert^2 }{ \sum_{p \in P} \arg\min_{j=1,\cdots,i} \Vert p - c_j \Vert^2 } 
 $$  
 
 其中：  
