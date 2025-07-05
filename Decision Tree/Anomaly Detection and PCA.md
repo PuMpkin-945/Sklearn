@@ -15,7 +15,7 @@
 **三种求解方式：**  
 ID3、C4.5、CART
 
-[参考资料：](https://www.cnblogs.com/callyblog/p/9724823.html)  
+[参考资料](https://www.cnblogs.com/callyblog/p/9724823.html)  
 
 ## 基于高斯分布实现异常检测(Anomaly Detection)
 
