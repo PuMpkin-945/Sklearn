@@ -30,7 +30,7 @@ $$
 确定聚类中心后，针对每个样本 $p$，计算其与 $k$ 个初始化聚类中心的距离，以**距离最小**为原则将其归到对应聚类中心内：  
 
 $$ 
-\text{Let } i = \arg\min_{i=1,\cdots,k} \| p - c_i \|^2 \implies c_i \leftarrow c_i \cup \{ p \} 
+\text{Let } i =\arg\min_{i=1,\cdots,k} \Vert p - c_i \Vert^2 \implies c_i \leftarrow c_i \cup \{ p \} 
 $$  
 
 
