@@ -15,18 +15,18 @@
 **三种求解方式：**  
 ID3、C4.5、CART
 
-[参考资料](https://www.cnblogs.com/callyblog/p/9724823.html)  
+[参考资料：](https://www.cnblogs.com/callyblog/p/9724823.html)  
 
 ## 基于高斯分布实现异常检测(Anomaly Detection)
 
 - **高斯分布**
 
 概率密度、均值、标准差：
-
- $$p(x)=\frac{1}{\delta \sqrt{2\pi}}e^{-\frac{{x-\mu}^2}{2 \delta^2}}$$
-
- $\mu=\frac{1}{m} \sum_{i=1}^{m} x_i$,  
- $\delta^2=\frac{1}{m} \sum_{i=1}{m} {x_i - \mu}^2$  
+$$
+p(x)=\frac{1}{\delta \sqrt{2\pai}}e^{-\frac{{x-\mu}^2}{2 \delta^2}}
+$$  
+$\mu=\frac{1}{m} \sum_{i=1}^{m} x_i$,  
+$\delta^2=\frac{1}{m} \sum_{i=1}{m} {x_i - \mu}^2$  
 
 - **一维数据**
 1. 计算数据均值和标准差
@@ -35,24 +35,21 @@ ID3、C4.5、CART
 
 - **n维数据**
 
-
-$$ 
-\left( 
-\begin{aligned}
-x_1^{(1)}, x_2^{(2)}, \cdots, x_1^{(m)} \\
-   \vdots   \\
-x_n^{(1)}, x_n^{(2)}, \cdots, x_n^{(m)} 
-\end{aligned}
-\right)
-$$  
+$$
+\left\{ \begin{array}{c}
+x_1^{(1)},x_2^{(2)},\cdots,x_1^{(m)\
+\vdots\
+x_n^{(1)},x_n^{(2)},\cdots,x_n^{(m)\
+\end{array}\right\}
+$$
 
 1. 计算每一维数据的均值和标准差
 2. 计算概率密度函数 $p(x)$
 $$p(x)=\prod_{j=1}^{n}p(x_j;\mu_j;\delta_j^{2})$$
 
 ## 主成分分析(PCA)
-    principal components analysis:数据降维技术中，应用最多的方法。
-    目标是寻找k(k<n)维新数据，使它们反映事物的主要特征。
+    principal components analysis:数据降维技术中，应用最多的方法。<br>
+    目标是寻找k(k<n)维新数据，使它们反映事物的主要特征。<br>
     核心是在信息损失尽可能少的情况下，降低数据维度。
 
 - **数据降维**
